@@ -1,4 +1,4 @@
-name: upload wesite
+name: Upload Wesite
 
 on:
   push:
