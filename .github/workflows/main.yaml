@@ -24,5 +24,5 @@ jobs:
 
       - name: deploy code to s3
         run: |
-          aws s3 sync
+          aws s3 sync . s3://mybucket
 #          . s3://build2/
