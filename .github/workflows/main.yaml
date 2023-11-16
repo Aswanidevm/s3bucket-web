@@ -21,7 +21,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-s3-bucket: ${{ secrets.AWS_S3_BUCKET }}
           aws-region: us-east-1
-#          SOURCE_DIR: 'public'
+
 
       - name: deploy code to s3
         run: |
