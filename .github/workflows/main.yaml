@@ -13,10 +13,6 @@ jobs:
       - uses: actions/checkout@v2
       - uses: aws-actions/configure-aws-credentials@v1
         with:
-#          args: --acl public-read --follow-symlinks --delete
-##            --exclude '.git*/*'
-#        env:
-
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-s3-bucket: ${{ secrets.AWS_S3_BUCKET }}
@@ -24,5 +20,4 @@ jobs:
 
       - name: deploy code to s3
         run: |
-          aws s3 sync . s3://mybucket
-#          . s3://build2/
+          aws s3 sync ./build2/. s3://www.aswani.fordevops.site
