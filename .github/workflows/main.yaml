@@ -20,4 +20,4 @@ jobs:
 
       - name: deploy code to s3
         run: |
-          aws s3 sync s3://www.aswani.fordevops.site
+          aws s3 sync ./ s3://www.aswani.fordevops.site
