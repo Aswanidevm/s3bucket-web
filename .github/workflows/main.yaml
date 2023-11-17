@@ -19,5 +19,4 @@ jobs:
           aws-region: us-east-1
 
       - name: deploy code to s3
-        run: |
-          aws s3 sync ./ s3://www.aswani.fordevops.site
+        run: aws s3 sync ./ s3://www.aswani.fordevops.site
